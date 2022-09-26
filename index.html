@@ -9,12 +9,14 @@
   <body>
 
     <header class="main-header">
-      <img src="/img/logo.svg" alt="Логотип города Седона" class="logo">
+      <a class="navigation-logo" href="index.html">
+        <img src="/img/logo.svg" alt="Логотип города Седона." class="logo" width="140" height="70">
+      </a>
       <nav class="navigation-list">
         <ul>
-          <li><a class="navigation-link" href="#">Главная</a></li>
+          <li><a class="navigation-link navigation-link-current" href="#">Главная</a></li>
           <li><a class="navigation-link" href="#">О седоне</a></li>
-          <li><a class="navigation-link" href="#">Гостиницы</a></li>
+          <li><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
 
@@ -31,7 +33,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда!</a>
+            <a class="navigation-link button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -56,7 +58,7 @@
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
         </ul>
-        <img src="/img/photo-1.jpg" alt="Здания города, окружённые цветущими растениями" width="800" height="384">
+        <img src="/img/photo-1.jpg" alt="Здания города, окружённые цветущими растениями." width="800" height="384">
         <ul class="adventages-item">
           <li>
             <h3>Небольшая площадь</h3>
@@ -72,8 +74,8 @@
           </li>
         </ul>
 
+        <img src="/img/photo-2.jpg" alt="Каменный мост дьявола в Седоне." width="800" height="384">
         <ul class="adventages-item">
-          <img src="/img/photo-2.jpg" alt="Каменный мост дьявола в Седоне" width="800" height="384">
           <li>
             <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -100,39 +102,45 @@
         <h2 class="visually-hidden">Поиск отелей</h2>
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <button>Поиск гостиницы в Седоне</button>
+        <a class="button" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscription">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <h3>Подпишитесь на рассылку</h3>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form>
-          <input type="email" placeholder="Ваш e-mail" required>
-          <button>Подписаться</button>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+          <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
-
-      <footer class="page-footer">
-        <ul class="social-links">
+    </main>
+    <footer class="page-footer">
+      <div class="footer-social">
+        <ul class="footer-social-links">
           <li>
-            <a class="social-link" href="https://vk.com/htmlacademy">
+            <a class="social-link button" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">VK</span>
             </a>
           </li>
           <li>
-            <a class="social-link" href="https://t.me/htmlacademy">
+            <a class="social-link button" href="https://t.me/htmlacademy">
               <span class="visually-hidden">Telegram</span></a>
           </li>
           <li>
-            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+            <a class="social-link button" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Youtube</span></a>
           </li>
         </ul>
-        <span class="phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></span>
-        <img src="/img/logo-html-academy.svg" alt="Логотип html academy" height="32" width="114">
-      </footer>
-    </main>
+      </div>
+
+      <span class="phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></span>
+
+      <a href="https://htmlacademy.ru/">
+        <img src="/img/logo-html-academy.svg" alt="Логотип html academy." height="32" width="114">
+      </a>
+    </footer>
+
   </body>
 
 </html>
