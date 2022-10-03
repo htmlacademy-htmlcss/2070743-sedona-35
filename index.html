@@ -7,10 +7,10 @@
   </head>
 
   <body>
-
-    <header class="main-header" data-test="header">
+    <div class="layout">
+    <header class="main-header">
       <a class="navigation-logo" href="index.html">
-        <img src="/img/logo.svg" alt="Логотип города Седона." class="logo" width="140" height="70">
+        <img src="/images/logo.svg" alt="Логотип города Седона." class="logo" width="140" height="70">
       </a>
       <nav class="navigation-list">
         <ul>
@@ -20,8 +20,7 @@
         </ul>
       </nav>
 
-      <nav class="navigation-list navigation-user">
-        <ul>
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
@@ -37,16 +36,12 @@
         <div class="navigation-item">
           <a class="navigation-link button" href="#">Хочу сюда!</a>
         </div>
-      </nav>
 
     </header>
 
-    <main class="main" data-test="main>
-
-      <section class="hero" data-test="hero">
+    <main class="main">
+      <section class="hero">
         <h1 class="visually-hidden">Туристический сайт города Седона</h1>
-        <h2 class="visually-hidden">Седона - городок в Аризоне</h2>
-        <p>Welcome to the gorgeous Sedona, because the Grand Canyon sucks!</p>
       </section>
 
       <section class="adventages" data-test="advantages">
@@ -59,9 +54,9 @@
           <li>
             <h3>Настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <img src="/images/photo-1.jpg" alt="Здания города, окружённые цветущими растениями." width="800" height="384">
           </li>
         </ul>
-        <img src="/img/photo-1.jpg" alt="Здания города, окружённые цветущими растениями." width="800" height="384">
         <ul class="adventages-item">
           <li>
             <h3>Небольшая площадь</h3>
@@ -77,9 +72,10 @@
           </li>
         </ul>
 
-        <img src="/img/photo-2.jpg" alt="Каменный мост дьявола в Седоне." width="800" height="384">
+
         <ul class="adventages-item">
           <li>
+            <img src="/images/photo-2.jpg" alt="Каменный мост дьявола в Седоне." width="800" height="384">
             <h3>Там есть мост дьявола</h3>
             <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </li>
@@ -101,14 +97,14 @@
         </ul>
       </section>
 
-      <section class="hotel-search" data-test="search">
+      <section class="hotel-search">
         <h2 class="visually-hidden">Поиск отелей</h2>
         <h3>Заинтересовались?</h3>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
-      <section class="subscription" data-test="subscribe">
+      <section class="subscription">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <h3>Подпишитесь на рассылку</h3>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -118,7 +114,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer" data-test="footer">
+    <footer class="page-footer">
       <div class="footer-social">
         <ul class="footer-social-links">
           <li>
@@ -140,10 +136,10 @@
       <span class="phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></span>
 
       <a href="https://htmlacademy.ru/">
-        <img src="/img/logo-html-academy.svg" alt="Логотип html academy." height="32" width="114">
+        <img src="/images/logo-html-academy.svg" alt="Логотип html academy." height="32" width="114">
       </a>
     </footer>
-
+  </div>
   </body>
 
 </html>
