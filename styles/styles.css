@@ -1,0 +1,137 @@
+  @font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+ @font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background-color: #F2F2F2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.layout {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.navigation-list {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.hero {
+  background-image: url("/images/index-background.jpg");
+}
+
+.button {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subscription-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hotel-search-button {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.navigation-link.button {
+text-transform: uppercase;
+}
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.adventages h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.subscription {
+  background-image: url("/images/subscribe-background.jpg");
+}
+
+.description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.phone {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.inner-header{
+  background-image: url("/images/catalog-background.jpg");
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.hotel-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.rating {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination-item {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+}
