@@ -9,19 +9,24 @@
 
   <body>
     <div class="layout">
-      <div class="catalog-container">
         <header class="main-header">
           <a class="navigation-logo" href="index.html">
             <img src="/images/logo/logo.svg" alt="Логотип города Седона." class="logo" width="140" height="70">
           </a>
-          <nav>
+          <nav class="navigation">
             <ul class="navigation-list default-fs">
-              <li><a class="navigation-link" href="index.html">Главная</a></li>
-              <li><a class="navigation-link" href="#">О седоне</a></li>
-              <li><a class="navigation-link navigation-link-current" href="#">Гостиницы</a></li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="index.html">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link" href="#">О седоне</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+              </li>
             </ul>
           </nav>
-          <ul class="navigation-user default-fs">
+          <ul class="navigation-list navigation-user default-fs">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Поиск</span>
@@ -34,102 +39,105 @@
             </li>
           </ul>
 
-          <div class="navigation-item">
-            <a class="navigation-link button text-fw" href="#">Хочу сюда!</a>
+          <div class="navigation-item nav-button nav-button-catalog">
+            <a class="navigation-link nav-button button text-fw" href="#">Хочу сюда!</a>
           </div>
-
         </header>
 
         <main class="main-inner main-container">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
+
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
                   <span class="visually-hidden">Главная</span>
                 </a>
               </li>
-              <li></li>
+              <li class="breadcrumbs-item"></li>
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
-          </header>
 
-          <section class="catalog-hotels">
-            <h2 class="visually-hidden">Фильтр гостиниц</h2>
 
-            <form class="catalog-filter-list" action="https://echo.htmlacademy.ru/" method="get">
+            <section class="catalog-hotels">
+              <h2 class="visually-hidden">Фильтр гостиниц</h2>
 
-              <div class="catalog-filter-group">
-                <p class="catalog-filter-title default-fs text-fw">Инфраструктура:</p>
+              <form class="catalog-filter-lists" action="https://echo.htmlacademy.ru/" method="get">
 
-                <ul class="catalog-filter">
-                  <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="checkbox" name="swimming-pool"
-                        checked>Бассейн</label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="checkbox" name="parking"
-                        checked>Парковка</label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="checkbox" name="wi-fi">Wi-Fi</label>
-                  </li>
-                </ul>
-              </div>
+                <div class="catalog-filter catalog-filter-first">
+                  <p class="catalog-filter-title default-fs text-fw">Инфраструктура:</p>
 
-              <div class="catalog-filter-group filter-left">
-                <p class="catalog-filter-title defaul-fs text-fw">Тип Жилья:</p>
-
-                <ul class="catalog-filter">
-                  <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="radio" name="type-of-housing"
-                        value="hotel" checked>Гостиница</label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="radio" name="type-of-housing"
-                        value="motel">Мотель</label>
-                  </li>
-                  <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="radio" name="type-of-housing"
-                        value="apartmemts">Апартаменты</label>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="catalog-filter-group filter-right">
-                <p class="catalog-filter-title default-fs text-fw">Стоимость, ₽:</p>
-                <input type="text">
-                <input type="text">
-                <div class="range">
-                  <button type="button"></button>
-                  <button type="button"></button>
+                  <ul class="catalog-filter-group">
+                    <li class="catalog-filter-item">
+                      <label class="control"><input class="control-input" type="checkbox" name="swimming-pool"
+                          checked>Бассейн</label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="control"><input class="control-input" type="checkbox" name="parking"
+                          checked>Парковка</label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="control"><input class="control-input" type="checkbox" name="wi-fi">Wi-Fi</label>
+                    </li>
+                  </ul>
                 </div>
 
+                <div class="catalog-filter filter-left">
+                  <p class="catalog-filter-title defaul-fs text-fw">Тип Жилья:</p>
 
-                <button class="button text-fw" type="button">Применить</button>
-                <button class="button text-fw" type="button">Сбросить</button>
-              </div>
-            </form>
+                  <ul class="catalog-filter-group">
+                    <li class="catalog-filter-item">
+                      <label class="control"><input class="control-input" type="radio" name="type-of-housing"
+                          value="hotel" checked>Гостиница</label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="control"><input class="control-input" type="radio" name="type-of-housing"
+                          value="motel">Мотель</label>
+                    </li>
+                    <li class="catalog-filter-item">
+                      <label class="control"><input class="control-input" type="radio" name="type-of-housing"
+                          value="apartmemts">Апартаменты</label>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="catalog-filter filter-right">
+                  <p class="catalog-filter-title default-fs text-fw">Стоимость, ₽:</p>
+                  <input class="price" type="text">
+                  <input  class="price" type="text">
+                  <div class="range">
+                    <button class="range-button" type="button"></button>
+                    <button class="range-button" type="button"></button>
+                  </div>
+                </div>
+
+                  <div class="filter-buttons">
+                    <button class="button filter-button text-fw" type="button">Применить</button>
+                    <button class="button filter-button text-fw" type="button">Сбросить</button>
+                  </div>
+
+              </form>
+          </header>
           </section>
-
+          <div class="catalog-container">
           <section class="hotel-cards">
             <div class="sort">
-              <h3 class="title sort-title text-fw">Найдено гостиниц:<span>38</span></h3>
+              <h3 class="title sort-title text-fw">Найдено гостиниц:<span> 38</span></h3>
               <select class="select-control" aria-label="Сортировка">
                 <option value="cheap">Сначала дешевые</option>
                 <option value="expensive">Сначала дорогие</option>
                 <option value="popular">Сначала популярные</option>
               </select>
               <div class="view">
-                <a class="button text-fw" href="#">
+                <a class="view-item button text-fw" href="#">
                   <span class="visually-hidden">Показать сетку</span>
                 </a>
-                <a class="button text-fw" href="#">
+                <a class="view-item button text-fw" href="#">
                   <span class="visually-hidden">Показать карточки</span>
                 </a>
-                <a class="button text-fw" href="#">
+                <a class="view-item button text-fw" href="#">
                   <span class="visually-hidden">Показать список</span>
                 </a>
               </div>
@@ -232,16 +240,16 @@
               <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
+        </div>
 
-
-          <section class="subscription">
-            <div class="container">
+          <section class="subscription subscription-catalog">
+            <div class="container subscription-container catalog-color">
               <h2 class="visually-hidden">Подписка на рассылку</h2>
-              <h3 class="title text-fw">Подпишитесь на рассылку</h3>
-              <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+              <h3 class="title text-fw text-uppercase">Подпишитесь на рассылку</h3>
+              <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
               <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-                <button class=" default-fs button button-lh text-fw" type="submit">Подписаться</button>
+                <input class="subscription-input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+                <button class="subscription-button btn text-fw" type="submit">Подписаться</button>
               </form>
             </div>
           </section>
@@ -249,29 +257,30 @@
         </main>
 
         <footer class="page-footer">
+
           <ul class="footer-social">
-            <li>
+            <li class="footer-social-item">
               <a class="social-link button text-fw" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">VK</span>
               </a>
             </li>
-            <li>
+            <li class="footer-social-item">
               <a class="social-link button text-fw" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span></a>
             </li>
-            <li>
+            <li class="footer-social-item">
               <a class="social-link button text-fw" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span></a>
             </li>
           </ul>
 
-          <div class="phone"><a href="tel:+78128121212">+7 (812) 812-12-12</a></div>
 
-          <a href="https://htmlacademy.ru/">
+          <div class="phone"><a class="phone-link" href="tel:+78128121212">+7 (812) 812-12-12</a></div>
+
+          <a href="https://htmlacademy.ru/" class="halogo">
             <img src="/images/logo/logo-html-academy.svg" alt="Логотип html academy." height="32" width="114">
           </a>
         </footer>
-      </div>
     </div>
   </body>
 
