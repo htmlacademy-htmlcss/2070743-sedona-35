@@ -69,59 +69,83 @@
             <form class="catalog-filter-lists" action="https://echo.htmlacademy.ru/" method="get">
 
               <div class="catalog-filter catalog-filter-first">
-                <p class="catalog-filter-title default-fs text-fw">Инфраструктура:</p>
-
+                <p class="catalog-filter-title text-fw">Инфраструктура:</p>
                 <ul class="catalog-filter-group">
                   <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="checkbox" name="swimming-pool"
-                        checked>Бассейн</label>
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="swimming-pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
+                    </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="checkbox" name="parking"
-                        checked>Парковка</label>
+                    <label class="control"><input class="visually-hidden  control-input" type="checkbox" name="parking"
+                        checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
+                    </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="checkbox" name="wi-fi">Wi-Fi</label>
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="checkbox" name="wi-fi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
+                    </label>
                   </li>
                 </ul>
               </div>
 
               <div class="catalog-filter filter-left">
-                <p class="catalog-filter-title defaul-fs text-fw">Тип Жилья:</p>
-
+                <p class="catalog-filter-title text-fw">Тип Жилья:</p>
                 <ul class="catalog-filter-group">
                   <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="radio" name="type-of-housing"
-                        value="hotel" checked>Гостиница</label>
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="hotel"
+                        checked>
+                      <span class="control-mark round-mark"></span>
+                      <span class="control-label">Гостиница</span>
+                    </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="radio" name="type-of-housing"
-                        value="motel">Мотель</label>
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="type-of-housing" value="motel">
+                      <span class="control-mark round-mark"></span>
+                      <span class="control-label">Мотель</span>
+                    </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="control"><input class="control-input" type="radio" name="type-of-housing"
-                        value="apartmemts">Апартаменты</label>
+                    <label class="control">
+                      <input class="visually-hidden control-input" type="radio" name="type-of-housing"
+                        value="apartmemts">
+                      <span class="control-mark round-mark"></span>
+                      <span class="control-label">Апартаменты</span>
+                    </label>
                   </li>
                 </ul>
               </div>
 
               <div class="catalog-filter filter-right">
-                <p class="catalog-filter-title default-fs text-fw">Стоимость, ₽:</p>
+                <p class="catalog-filter-title text-fw">Стоимость, ₽:</p>
                 <div class="price">
-                  <input class="price-item" type="text">
-                  <input class="price-item" type="text">
+                  <input class="price-item" type="number" name="price" placeholder="0" min="0">
+                  <input class="price-item" type="number" name="price" placeholder="9000" max="9000">
                 </div>
                 <div class="range">
-                  <button class="range-button" type="button"></button>
-                  <button class="range-button" type="button"></button>
-                </div>
-                <div class="filter-buttons">
-                  <button class="button filter-button apply-btn text-fw" type="button">Применить</button>
-                  <button class="button filter-button text-fw" type="button">Сбросить</button>
+                  <div class="range-bar" style="left: 0; width: 216px;">
+                    <button class="range-toggle toggle-min" type="button">
+                      <span class="visually-hidden">Изменить</span>
+                    </button>
+                    <button class="range-toggle toggle-max" type="button">
+                      <span class="visually-hidden">Изменить</span>
+                    </button>
+                  </div>
                 </div>
               </div>
 
-
+              <div class="filter-buttons">
+                <button class="button filter-button apply-btn text-fw" type="button">Применить</button>
+                <button class="button filter-button text-fw" type="button">Сбросить</button>
+              </div>
 
             </form>
         </header>
@@ -136,7 +160,7 @@
                 <option value="popular">Сначала популярные</option>
               </select>
               <div class="view">
-                <a class="view-item view-item-grid button text-fw" href="#">
+                <a class="view-item view-item-grid view-item-current button text-fw" href="#">
                   <span class="visually-hidden">Показать сетку</span>
                 </a>
                 <a class="view-item view-item-cards button text-fw" href="#">
@@ -157,7 +181,7 @@
                 </a>
                 <div class="card-container">
                   <span class="hotel-card-type">Гостиница</span>
-                  <b class="hotel-card-price">от 4000 ₽</b>
+                  <b class="hotel-card-price">От 4000 ₽</b>
                   <a href="#" class="details button text-fw">Подробнее</a>
                   <button class="favourites button text-fw" type="submit">В избранное</button>
                   <ul class="rating-stars">
@@ -178,7 +202,7 @@
                 </a>
                 <div class="card-container">
                   <span class="hotel-card-type">Гостиница</span>
-                  <b class="hotel-card-price">от 5000 ₽</b>
+                  <b class="hotel-card-price">От 5000 ₽</b>
                   <a href="#" class="details button text-fw">Подробнее</a>
                   <button class="favourites favourites-current button text-fw" type="submit">В избранном</button>
                   <ul class="rating-stars">
@@ -199,7 +223,7 @@
                 </a>
                 <div class="card-container">
                   <span class="hotel-card-type">Гостиница</span>
-                  <b class="hotel-card-price">от 2500 ₽</b>
+                  <b class="hotel-card-price">От 2500 ₽</b>
                   <a href="#" class="details button text-fw">Подробнее</a>
                   <button class="favourites button text-fw" type="submit">В избранное</button>
                   <ul class="rating-stars">
@@ -219,7 +243,7 @@
                 </a>
                 <div class="card-container">
                   <span class="hotel-card-type">Гостиница</span>
-                  <b class="hotel-card-price">от 1500 ₽</b>
+                  <b class="hotel-card-price">От 1500 ₽</b>
                   <a href="#" class="details button text-fw">Подробнее</a>
                   <button class="favourites button text-fw" type="submit">В избранное</button>
                   <ul class="rating-stars">
@@ -231,28 +255,27 @@
         </div>
         </ul>
         </section>
-
-        <ul class="pagination">
-          <li class="pagination-item defaul-fs text-fw">
-            <a class="pagination-link pagination-current" href="#">1</a>
-          </li>
-          <li class="pagination-item default-fs text-fw">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item default-fs text-fw">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item default-fs text-fw">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item pagination-next default-fs text-fw">
-            <a class="pagination-link pagination-next" href="#">...<span class="visually-hidden">Следующая
-                страница</span></a>
-          </li>
-          <li class="pagination-item default-fs text-fw">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
+          <ul class="pagination">
+            <li class="pagination-item defaul-fs text-fw">
+              <a class="pagination-link pagination-current" href="#">1</a>
+            </li>
+            <li class="pagination-item default-fs text-fw">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item default-fs text-fw">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item default-fs text-fw">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item pagination-next default-fs text-fw">
+              <a class="pagination-link pagination-next" href="#">...<span class="visually-hidden">Следующая
+                  страница</span></a>
+            </li>
+            <li class="pagination-item default-fs text-fw">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+          </ul>
     </div>
     <div class="layout">
       <section class="subscription subscription-catalog">
@@ -320,6 +343,10 @@
       </footer>
     </div>
     </div>
+
+
+
   </body>
+
 
 </html>
